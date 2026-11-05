@@ -1,0 +1,39 @@
+{
+  "geode": "5.9.0",
+  "gd": {
+    "win": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081",
+    "android": "2.2081"
+  },
+  "id": "ayunaka.predictive-input-buffer",
+  "name": "Predictive Input Buffer",
+  "version": "1.0.0",
+  "developer": "Ayunaka",
+  "description": "Buffers early jump inputs for a configurable number of physics ticks.",
+  "tags": ["gameplay", "utility"],
+  "settings": {
+    "enabled": {
+      "name": "Enable Input Buffer",
+      "description": "Queue jump press/release events while playing a level.",
+      "type": "bool",
+      "default": true
+    },
+    "buffer-ticks": {
+      "name": "Buffer Window",
+      "description": "Number of physics ticks to hold an input before applying it (2–16).",
+      "type": "int",
+      "default": 2,
+      "min": 2,
+      "max": 16,
+      "control": { "slider": true }
+    },
+    "toggle-key": {
+      "name": "Toggle Buffer",
+      "description": "Toggle the input buffer during gameplay.",
+      "type": "keybind",
+      "default": "F6",
+      "category": "gameplay"
+    }
+  }
+}
